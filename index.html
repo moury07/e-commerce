@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pink & Green digital marketplace — professional website templates." />
+  <title>PinkMint Studio — Website Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span><b>PINKMINT</b><small>WEB STUDIO</small></span></a>
+    <nav class="nav">
+      <a class="active" href="index.html">⌂ Home</a>
+      <a href="templates.html">▦ Templates</a>
+      <a href="#categories">▦ Categories</a>
+      <a href="contact.html">◉ Contact</a>
+    </nav>
+    <div class="actions"><button class="cart-btn" id="cartBtn">🛒 Cart <span id="cartCount">0</span></button><button class="login-btn" id="loginBtn">♙ Login</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="glow glow-pink"></div><div class="glow glow-green"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">PREMIUM DIGITAL MARKETPLACE</p>
+        <h1>Build Your Dream Website <span>Today</span></h1>
+        <p class="subtitle">120+ Professional Templates · Modern Design · Fast Delivery · Affordable Price</p>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search templates (portfolio, ecommerce, blog...)" /><button id="searchBtn">Search</button></div>
+        <div class="stats"><div><strong>120+</strong><small>Templates</small></div><div><strong>500+</strong><small>Happy Clients</small></div><div><strong>24/7</strong><small>Support</small></div></div>
+      </div>
+    </section>
+
+    <section class="content" id="categories">
+      <div class="section-title"><h2>Browse by Category</h2><p>Find the perfect design for your next project</p></div>
+      <div class="chips" id="chips"></div>
+      <div class="section-title templates-heading"><h2>All Website Templates</h2><p id="resultText">Click any template to order instantly</p></div>
+      <div class="grid" id="productGrid"></div>
+      <button class="load-more" id="loadMore">Load More Templates</button>
+    </section>
+  </main>
+
+  <footer><div><b>PINKMINT WEB STUDIO</b><p>Professional templates for modern businesses.</p></div><div class="footer-links"><a href="templates.html">Templates</a><a href="contact.html">Contact</a><a href="#">Privacy</a></div><small>© 2026 PinkMint Studio. Built for GitHub Pages.</small></footer>
+
+  <div class="modal hidden" id="modal"><div class="modal-card"><button class="close" id="closeModal">×</button><h3 id="modalTitle">Welcome</h3><p id="modalText">Enter your details to continue.</p><input id="userName" placeholder="Your name"/><input id="userEmail" type="email" placeholder="Email address"/><button class="primary" id="modalAction">Continue</button></div></div>
+  <div class="toast" id="toast">Added to cart</div>
+  <script src="app.js"></script>
+</body>
+</html>
